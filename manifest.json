@@ -1,0 +1,21 @@
+{
+    "manifest_version" : 2,
+    "name" : "FastConfigs",
+    "description" : "Automatically fill heroku configuration variables, by simply impoting a .txt, .json or .env file.",
+    "version" : "1.0.0",
+    "content_scripts" : [
+        {
+            "matches" : ["https://dashboard.heroku.com/*"],
+            "js" : ["index.js"]
+        }
+    ],
+    "browser_action" : {
+        "default_popup" : "popup.html",
+        "default_title" : "FastConfigs"
+    },
+    "permissions": [
+        "tabs",
+        "activeTab"
+    ],
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}

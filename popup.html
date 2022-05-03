@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heroku Configurer</title>
+</head>
+<body>
+    <style>
+        @font-face {
+            font-family: Gilroy;
+            src: url("Gilroy-Regular.ttf");
+        }
+        :root{
+            --primary-color : #EEEEEE;
+            --bg-color : #FFFFFF;
+            --blue-color : #007FFF;
+            --black-color : #a5a5a5;
+        }
+        .main-container{
+            font-family: Gilroy;
+            padding : 50px;
+            background-color: var(--bg-color);
+            border-radius: 10px;
+            padding: 20px;
+            min-width: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .select-file{
+            background-color: var(--primary-color);
+            height: 100%;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px dashed var(--black-color);
+            width: 90%;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .small-font{
+            font-size: 12px;
+            padding: 5px;
+            display: block;
+        }
+        .upload-icon{
+            height : 80px;
+            width : 100px;
+        }
+        .cancel-button{
+            position: absolute;
+            font-family: monospace;
+            right: 4%;
+            top: 4%;
+            background-color: var(--primary-color);
+            padding: 10px;
+            font-weight: bolder;
+            width: 0.5rem;
+            height: 0.5rem;
+            border-radius: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        .uploading-section{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: right;
+            align-items: right;
+        }
+        .uploading-section .basic-text{
+            display: flex;
+            justify-content:space-between;
+            /* align-content: flex-end; */
+        }
+        .uploading-section .basic-text p:nth-child(1){
+            color: var(--black-color);
+        }
+        .uploading-section .basic-text p:nth-child(2){
+            color :var(--blue-color);
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .file-icon{
+            height: 25px;
+            width: 25px;
+            margin: 10px;
+        }
+        .progress-bar{
+            background-color: var(--primary-color);
+            padding: 0%;
+            border-radius: 0.5rem;
+        }
+        .main-progress{
+            background-color: var(--blue-color);
+            border-radius: 0.5rem;
+            width: 0%;
+            display: flex;
+            justify-items: center;
+            color:var(--bg-color);
+            font-weight: bold;
+            align-items: center;
+        }
+        .import-btn-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        .import-btn-container button{
+            background-color: var(--blue-color);
+            width: 60%;
+            margin: 20px;
+            padding : 15px 40px;
+            border: none;
+            color: var(--bg-color);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .select-app{
+            width: 100%;
+            margin: 20px;
+        }
+        .select-app .app-name{
+            width: 100%;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+    <div class="main-container">
+        <div class="cancel-button"  id="close-extension">
+            X
+        </div>
+        <div>
+            <h2>FastConfigs</h2>
+        </div>
+        <p id="heroku-configurer-error-msg"></p>
+        <div class="select-app">
+            <select id="app-name" class="app-name">
+                <option value="">Loading Apps</option>
+            </select>
+        </div>
+        <!-- <div>
+            <small class="small-font">.env, .txt and .json files are allowed</small>
+        </div> -->
+        <div class="select-file" id="select-file">
+            <div>
+                <small class="small-font">.env, .txt and .json files are allowed</small>
+            </div>
+            <div>
+                <img src="upload-cloud.svg" class="upload-icon" alt="upload-cloud">
+            </div>
+            <div>
+                <small class="small-font"><a href="#">Click to choose a file</a></small>
+            </div>
+        </div>
+        <div class="uploading-section" id="uploading-section" style="display: none;">
+            <div class="basic-text">
+                <p>Uploaded File</p>
+                <!-- <p>Remove</p> -->
+            </div>
+            <div class="progress-bar">
+                <div class="main-progress" id="main-brainstorm">
+                    <div class="file-logo">
+                        <img src="file-text.svg" alt="file-icon" class="file-icon">
+                    </div>
+                    <div class="file-details">
+                        <div class="file-name" id="file-name">
+                            test.txt
+                        </div>
+                        <div class="file-size" id="file-size">
+                            400kb
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="import-btn-container">
+                <button id="heroku-configurer-btn">Import</button>
+            </div>
+        </div>
+        <input type="file" id="heroku-configurer-file" style="display: none;" />
+    </div>
+    <script src="action.js"></script>
+</body>
+</html>

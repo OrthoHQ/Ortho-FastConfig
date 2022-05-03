@@ -1,0 +1,9 @@
+@font-face {
+    font-family: Roboto;
+    src: url("roboto.ttf");
+}
+body{
+    font-family: Roboto;
+    background-color: #AFAFAF;
+    min-width: 300px;
+}
