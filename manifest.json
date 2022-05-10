@@ -1,7 +1,7 @@
 {
     "manifest_version" : 3,
     "name" : "FastConfigs",
-    "description" : "Automatically fill heroku configuration variables, by simply impoting a .txt, .json or .env file.",
+    "description" : "FastConfigs is a tool used to setup a heroku app environment variable by simply importing an env, text of json file. It basically makes use of some heroku endpoints to achieve this. The extension only works for heroku currently, but our goal is to make it available for vercel, netlify and any other platform.",
     "version" : "1.0.0",
     "content_scripts" : [
         {
@@ -14,8 +14,7 @@
         "default_title" : "FastConfigs"
     },
     "permissions": [
-        "tabs",
-        "activeTab"
+        "tabs"
     ],
     "host_permissions": [
         "https://dashboard.heroku.com/*"
