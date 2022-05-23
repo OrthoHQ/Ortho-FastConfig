@@ -1,0 +1,68 @@
+# Privacy Policy
+
+Last updated: May 23, 2022
+
+This Privacy Policy describes Our policies and procedures use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.
+
+We use Your Personal data to provide and improve the Service. By using the Service, You agree to the use of information in accordance with this Privacy Policy. 
+
+# Interpretation and Definitions
+
+## Interpretation
+
+The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
+
+## Definitions
+
+For the purposes of this Privacy Policy:
+
+- __Company__ (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to FastConfigs.
+
+- __Personal Data__ is any information that relates to an identified or identifiable individual.
+
+
+- __Service__ refers to the Website.
+
+- __Service Provider__ means any natural or legal person who processes the data on behalf of the Company. It refers to third-party companies or individuals employed by the Company to facilitate the Service, to provide the Service on behalf of the Company, to perform services related to the Service or to assist the Company in analyzing how the Service is used.
+
+- __Website__ refers to FastConfigs, accessible from [would_be_updated_after_approval](https://google.com)
+
+- __You__ means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.
+
+
+
+# Using Your Personal Data
+
+## Types of Data Collected
+
+### Personal Data
+
+While using Our Service, We may automatically use your certain personally identifiable information that can be used to contact or identify You. Personally identifiable information may include, but is not limited to:
+
+
+## Use of Your Personal Data
+
+The Company may use Personal Data for the following purposes:
+
+- __To provide our Service__, 
+
+# Children's Privacy
+
+Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from anyone under the age of 13. If You are a parent or guardian and You are aware that Your child has provided Us with Personal Data, please contact Us. If We become aware that We have collected Personal Data from anyone under the age of 13 without verification of parental consent, We take steps to remove that information from Our servers.
+
+If We need to rely on consent as a legal basis for processing Your information and Your country requires consent from a parent, We may require Your parent's consent before We collect and use that information.
+
+# Changes to this Privacy Policy
+
+We may update Our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy on this page.
+
+We will let You know via email and/or a prominent notice on Our Service, prior to the change becoming effective and update the "Last updated" date at the top of this Privacy Policy.
+
+You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.
+
+# Contact Us
+
+If you have any questions about this Privacy Policy, You can contact us:
+
+
+- By email: support@tryortho.co
